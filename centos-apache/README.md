@@ -1,6 +1,16 @@
-### centos-apache 
+### centos-apache
 
 A dockerfile for apache + php + php-mysql
+
+Centos `7`
+
+Apache `2.4.6`
+
+PHP `5.4.16`
+
+#### Tags
+
+Apache `2.4.6`, `latest`
 
 #### Ports
 

@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 RUN yum -y -q update
 RUN yum -y -q install httpd php php-mysql
 
