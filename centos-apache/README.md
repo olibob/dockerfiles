@@ -1,4 +1,4 @@
-### centos-apache
+## centos-apache
 
 A dockerfile for apache + php + php-mysql
 
@@ -8,11 +8,11 @@ Apache `2.4.6`
 
 PHP `5.4.16`
 
-#### Tags
+### Tags
 
 Apache `2.4.6`, `latest`
 
-#### Ports
+### Ports
 
 Standard `80` and `443`
 
@@ -20,7 +20,7 @@ Standard `80` and `443`
 
 `/var/www/html` and `/var/log/httpd`
 
-#### Usage
+### Usage
 
 ```bash
 docker run -d --name apache -p 80:80 -p 443:443 olibob/apache
