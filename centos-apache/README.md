@@ -18,7 +18,7 @@ Standard `80` and `443`
 
 ### Volumes
 
-`/var/www/html` and `/var/log/httpd`
+`/Volumes/ar/ar/www/html` and `/var/log/httpd`
 
 ### Usage
 
