@@ -5,12 +5,12 @@ VOLUME /media
 
 RUN yum -y -q update
 
-RUN yum -y -q install git python-cheetah;\
+RUN yum -y -q install git python-cheetah wget tar;\
     yum clean all;\
-    git clone https://github.com/midgetspy/Sick-Beard.git /opt
-
-# Revert to this commit to avoid bug in last commit 79cb8f207bef8613db9e47eb392666af059df3d0
-RUN cd /opt; git checkout ff36290ba50a08d004b41cbcb8649645c324797a
+    cd /tmp; wget --quiet https://github.com/midgetspy/Sick-Beard/archive/build-507.tar.gz; \
+    tar xzf build-507.tar.gz; \
+    cp -r Sick-Beard-build-507/* /opt/ ;\
+    rm -rf Sick-Beard-build-507 build-507.tar.gz
 
 EXPOSE 8081
 
